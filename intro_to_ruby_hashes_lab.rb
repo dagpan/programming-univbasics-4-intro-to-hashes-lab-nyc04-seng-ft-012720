@@ -39,7 +39,9 @@ def update_counting_hash(hash1 = {"id" => 45, "age" => 25}, key = "exp")
   # if the provided key is present, increment its value by 1
   if hash1[key]
      hash1[key] += 1
+     return hash1
   else
      hash1[key] = 1
+     return hash1
   end
 end
